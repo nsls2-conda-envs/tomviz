@@ -1,5 +1,5 @@
 docker_image: "nsls2/linux-anvil-cos7-x86_64:latest"
-env_name: "tomviz-{{ today }}"
+env_name: "tomviz-{{ today }}-bld2"
 conda_binary: "mamba"
 python_version: "3.7"
 pkg_name: "tomviz"
