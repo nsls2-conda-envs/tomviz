@@ -141,6 +141,6 @@ jobs:
       - name: upload artifacts for the env .yml file
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.CONDA_PACK_ENV_NAME }}.yml
-          path: artifacts/${{ env.CONDA_PACK_ENV_NAME}}.yml
+          name: tomviz.yml
+          path: artifacts/*.yml
           retention-days: 30
