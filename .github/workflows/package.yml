@@ -125,7 +125,7 @@ jobs:
           github.ref != 'refs/heads/main'
         uses: actions/upload-artifact@v3
         with:
-          name: test-${{ env.CONDA_PACK_ENV_NAME }}-${{ env.DATETIME_STRING }}
+          name: test-tomviz-${{ env.DATETIME_STRING }}
           path: artifacts
           retention-days: 7
 
@@ -134,7 +134,7 @@ jobs:
           github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.CONDA_PACK_ENV_NAME }}
+          name: tomviz
           path: artifacts
           retention-days: 30
 
