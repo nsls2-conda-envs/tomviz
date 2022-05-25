@@ -112,7 +112,7 @@ jobs:
       - name: contents of the env .yml file
         shell: bash -l {0}
         run: |
-          cat artifacts/${CONDA_PACK_ENV_NAME}.yml
+          cat artifacts/*.yml
 
       - name: checksum files
         shell: bash -l {0}
